@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+* {
+     font-family: 'Outfit', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     outline: none;
+     border: none;
+     list-style: none;
+     text-decoration: none;
+     transition: all .2s linear;
+}
+
+html {
+     font-size: 62.5%;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+     scroll-padding-top: 6.5rem;
+}
+
+section {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 2rem;
+}
+
+body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 70vh;
+}
+
+:root {
+     --brand-color: #3F9CFB;
+     --text-color: #17222b;
+     --defoult-color: #000;
+     --white-color: #fff;
+     --bg-color: rgb(245 247 250);
+     --white-btn-color: #efeeee;
+     --shadow-color: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+}
+
+h1 {
+     font-size: 4rem;
+     color: var(--text-color);
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+}
+
+h2 {
+     font-size: 4.5rem;
+     color: var(--text-color);
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+}
+
+h3 {
+     font-size: 6rem;
+     color: var(--text-color);
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+}
+
+span {
+     font-size: 1.6rem;
+     color: var(--brand-color);
+}
+
+p {
+     font-size: 1.8rem;
+     color: var(--text-color);
+}
+
+.codes .container {
+     max-width: 100%;
+     background-color: #ffffff;
+     padding: 5rem 4rem;
+     border-radius: 2rem;
+     box-shadow: 0 2rem 3.5rem rgba(60,60,60,0.2);
+ }
+
+ .codes .wrapper {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .codes .wrapper input {
+     width: 80%;
+     padding: 1rem;
+     border-radius: 3px;
+     border: 1px solid #201d2e;
+ }
+
+ .codes .wrapper button {
+     width: fit-content;
+     background-color: #201d2e;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 1.5rem 3rem;
+     color: #ffffff;
+     border-radius: 3px;
+ }
+
+ .codes .container p {
+     line-height: 35px;
+     text-align: justify;
+     margin-top: 30px;
+ }
+
+ mark {
+     background-color: #ffdd4b;
+ }
+
+ @media (max-width: 991px){
+     html {
+          font-size: 55%;
+     }
+ }
+
+ @media (max-width: 768px){
+     .wrapper {
+          flex-flow: column;
+     }
+
+     .wrapper input {
+          width: 100% !important;
+     }
+
+     .wrapper button {
+          width: 100% !important;
+          margin-top: 2rem;
+     }
+ }
+
+ @media (max-width: 450px){
+     html {
+          font-size: 50%;
+     }
+ } 
